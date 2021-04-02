@@ -2,9 +2,10 @@
 
 Within this repository I share my Hackintosh EFI for my newest build based on Intels Rocketlake 11th Gen CPU.
 
-![Z590i and 11900k running Big Sur](Docs/ScreenShot_2021-04-01_at_15.00.38.png)
-
-![Z590i and 11900k Geekbench 5.4.0](Docs/ScreenShot_2021-04-01_at_14.59.12.png)
+<p align="center">
+  <img src="Docs/ScreenShot_2021-04-01_at_15.00.38.png" width="100%" align=center alt="Z590i and 11900k running macOS Big Sur">
+  <img src="Docs/ScreenShot_2021-04-01_at_14.59.12.png" width="70%" align=center alt="Geekbench Score on Geekbench 5.4.0">
+</p>
 
 # Hardware used in this build:
 
