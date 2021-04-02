@@ -25,7 +25,7 @@ Within this repository I share my Hackintosh EFI for my newest build based on In
 - Case: NCASE M1 v6.1
 
 # What is working:
-- CPU with iMac20,2 SMBIOS, no FakeID-spoofing required. At least not on my existing macOS Big Sur 11.3 Beta 5 installation. Maybe it is required when doing a fresh install, but I doubt so.
+- CPU with iMac20,2 SMBIOS, currently using a Fake CPU-ID
 - eGPU is working out of the box with default BIOS settings
 - Audio: working out of the box as it is connected like a USB-Audio interface. But keep in mind it only shows up, when you plugin something (e.g. headphones).
 - Thunderbolt 4, but no hotplug
