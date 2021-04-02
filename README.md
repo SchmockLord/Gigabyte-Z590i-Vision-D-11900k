@@ -2,11 +2,11 @@
 
 Within this repository I share my Hackintosh EFI for my newest build based on Intels Rocketlake 11th Gen CPU.
 
-![Z590i and 11900k running Big Sur](Docs/"Screen Shot 2021-04-01 at 14.59.12.png")
+![Z590i and 11900k running Big Sur](Docs/ScreenShot_2021-04-01_at_15.00.38.png)
 
-![Z590i and 11900k Geekbench 5.4.0](Docs/"Screen Shot 2021-04-01 at 15.00.38.png")
+![Z590i and 11900k Geekbench 5.4.0](Docs/ScreenShot_2021-04-01_at_14.59.12.png)
 
-## Hardware used in this build:
+# Hardware used in this build:
 
 - CPU: Intel i9-11900k
 - Board: Gigabyte Z590i Vision D:
@@ -23,8 +23,7 @@ Within this repository I share my Hackintosh EFI for my newest build based on In
     1x 1TB Samsung 960 EVO for macOS (sits on the back of the board)
 - Case: NCASE M1 v6.1
 
-
-## What is working:
+# What is working:
 - CPU with iMac20,2 SMBIOS, no FakeID-spoofing required. At least not on my existing macOS Big Sur 11.3 Beta 5 installation. Maybe it is required when doing a fresh install, but I doubt so.
 - eGPU is working out of the box with default BIOS settings
 - Audio: working out of the box as it is connected like a USB-Audio interface. But keep in mind it only shows up, when you plugin something (e.g. headphones).
@@ -32,9 +31,9 @@ Within this repository I share my Hackintosh EFI for my newest build based on In
 - Wifi/BT, out of the box thanks to the BCM94360NG
 - USB-ports. Have created my custom USB port mapping with USBMap.command
 
-## What is not working:
+# What is not working:
 - Thunderbolt 4 hot plugging
 - iGPU, just haven't tried that, will do that next week.
 
-## BIOS-settings:
+# BIOS-settings:
 - Current BIOS version: F5a running on Default settings. Only thing I have changed is setting Legacy USB to disabled. Internal graphics is on Auto.
