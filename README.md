@@ -38,3 +38,14 @@ Within this repository I share my Hackintosh EFI for my newest build based on In
 
 # BIOS-settings:
 - Current BIOS version: F5a running on Default settings. Only thing I have changed is setting Legacy USB to disabled. Internal graphics is on Auto.
+
+# Credits:
+
+
+- [ohchang](https://github.com/dhckdgjs/GIGABYTE-Z590-VISION-G-HACKINTOSH-OPENCORE-iGPU-with-dGPU-UHD630-RX580) Your Z590 Vision G config was very helpful!
+- [CaseySJ, Ori69 and vipermachine](https://www.tonymacx86.com/threads/z490-z590.308084/page-16) For the Thunderbolt 4 support!
+- [Dortania](https://github.com/dortania) for this great OpenCore Desktop Guide
+- [headkaze](https://github.com/headkaze) for Hackintool and our productive conversations :)
+- [Acidanthera](https://github.com/acidanthera) for too many things to mention each
+- [RehabMan](https://github.com/RehabMan) for too many things to mention each
+- [OpenCore project](https://github.com/OpenCorePkg) for this great bootloader
