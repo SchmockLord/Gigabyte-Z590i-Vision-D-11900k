@@ -1,0 +1,1 @@
+# Gigabyte-Z590i-Vision-D-11900k
