@@ -54,19 +54,19 @@
 						<key>port</key>
 						<data>BgAAAA==</data>
 					</dict>
-					<key>HS09</key>
+					<key>HS07</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>port</key>
-						<data>CQAAAA==</data>
+						<data>BwAAAA==</data>
 					</dict>
-					<key>HS10</key>
+					<key>HS08</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>port</key>
-						<data>CgAAAA==</data>
+						<data>CAAAAA==</data>
 					</dict>
 					<key>HS11</key>
 					<dict>
