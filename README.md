@@ -4,7 +4,7 @@ Within this repository I share my Hackintosh EFI for my newest build based on In
 
 <p align="center">
   <img src="Docs/ScreenShot_2021-04-01_at_15.00.38.png" width="100%" align=center alt="Z590i and 11900k running macOS Big Sur">
-  <img src="Docs/ScreenShot_2021-04-01_at_14.59.12.png" width="70%" align=center alt="Geekbench Score on Geekbench 5.4.0">
+  <img src="Docs/ScreenShot_2021-04-05_at_13.47.39.png" width="70%" align=center alt="Geekbench Score on Geekbench 5.4.0">
 </p>
 
 # Hardware used in this build:
@@ -37,7 +37,36 @@ Within this repository I share my Hackintosh EFI for my newest build based on In
 - iGPU, just haven't tried that, will do that next week.
 
 # BIOS-settings:
-- Current BIOS version: F5a running on Default settings. Only thing I have changed is setting Legacy USB to disabled. Internal graphics is on Auto.
+- Current BIOS version: F5a
+- Only setting you need to change, is setting '''Legacy USB''' to disabled and '''Internal graphics''' to disabled.
+
+Here are my settings with a dynamic OC on the 11900k. 
+
+Power Limit is set to 250W to stay within the limits of my Kraken X53 240mm AiO. In Cinebench R23 I get a maximum of 91C. Which is ok.
+
+54 when running on 2 cores.
+
+52 when running on 4 cores.
+
+51 when running with more than 4 cores.
+
+<p align="center">
+  <img src="BIOS_Settings/IMG_3016.jpg" width="100%" align=center alt="BIOS settings #1">
+  <img src="BIOS_Settings/IMG_3017.jpg" width="100%" align=center alt="BIOS settings #2">
+  <img src="BIOS_Settings/IMG_3018.jpg" width="100%" align=center alt="BIOS settings #3">
+  <img src="BIOS_Settings/IMG_3019.jpg" width="100%" align=center alt="BIOS settings #4">
+  <img src="BIOS_Settings/IMG_3020.jpg" width="100%" align=center alt="BIOS settings #5">
+  <img src="BIOS_Settings/IMG_3021.jpg" width="100%" align=center alt="BIOS settings #6">
+  <img src="BIOS_Settings/IMG_3022.jpg" width="100%" align=center alt="BIOS settings #7">
+  <img src="BIOS_Settings/IMG_3024.jpg" width="100%" align=center alt="BIOS settings #8">
+  <img src="BIOS_Settings/IMG_3025.jpg" width="100%" align=center alt="BIOS settings #9">
+  <img src="BIOS_Settings/IMG_3026.jpg" width="100%" align=center alt="BIOS settings #10">
+  <img src="BIOS_Settings/IMG_3027.jpg" width="100%" align=center alt="BIOS settings #11">
+  <img src="BIOS_Settings/IMG_3028.jpg" width="100%" align=center alt="BIOS settings #12">
+  <img src="BIOS_Settings/IMG_3029.jpg" width="100%" align=center alt="BIOS settings #13">
+  <img src="BIOS_Settings/IMG_3030.jpg" width="100%" align=center alt="BIOS settings #14">
+  <img src="BIOS_Settings/IMG_3033.jpg" width="100%" align=center alt="BIOS settings #15">
+</p>
 
 # Credits:
 
