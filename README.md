@@ -37,7 +37,18 @@ Within this repository I share my Hackintosh EFI for my newest build based on In
 - iGPU, just haven't tried that, will do that next week.
 
 # BIOS-settings:
-- Current BIOS version: F5a running on Default settings. Only thing I have changed is setting Legacy USB to disabled. Internal graphics is on Auto.
+- Current BIOS version: F5a
+- Only setting you need to change, is setting '''Legacy USB''' to disabled and '''Internal graphics''' to disabled.
+
+Here are my settings with a dynamic OC on the 11900k. 
+
+Power Limit is set to 250W.
+
+54 when running on 2 cores.
+
+52 when running on 4 cores.
+
+51 when running with more than 4 cores.
 
 # Credits:
 
