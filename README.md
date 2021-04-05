@@ -42,13 +42,31 @@ Within this repository I share my Hackintosh EFI for my newest build based on In
 
 Here are my settings with a dynamic OC on the 11900k. 
 
-Power Limit is set to 250W.
+Power Limit is set to 250W to stay within the limits of my Kraken X53 240mm AiO. In Cinebench R23 I get a maximum of 91C. Which is ok.
 
 54 when running on 2 cores.
 
 52 when running on 4 cores.
 
 51 when running with more than 4 cores.
+
+<p align="center">
+  <img src="BIOS_Settings/IMG_3016.jpg" width="100%" align=center alt="BIOS settings #1">
+  <img src="BIOS_Settings/IMG_3017.jpg" width="100%" align=center alt="BIOS settings #2">
+  <img src="BIOS_Settings/IMG_3018.jpg" width="100%" align=center alt="BIOS settings #3">
+  <img src="BIOS_Settings/IMG_3019.jpg" width="100%" align=center alt="BIOS settings #4">
+  <img src="BIOS_Settings/IMG_3020.jpg" width="100%" align=center alt="BIOS settings #5">
+  <img src="BIOS_Settings/IMG_3021.jpg" width="100%" align=center alt="BIOS settings #6">
+  <img src="BIOS_Settings/IMG_3022.jpg" width="100%" align=center alt="BIOS settings #7">
+  <img src="BIOS_Settings/IMG_3024.jpg" width="100%" align=center alt="BIOS settings #8">
+  <img src="BIOS_Settings/IMG_3025.jpg" width="100%" align=center alt="BIOS settings #9">
+  <img src="BIOS_Settings/IMG_3026.jpg" width="100%" align=center alt="BIOS settings #10">
+  <img src="BIOS_Settings/IMG_3027.jpg" width="100%" align=center alt="BIOS settings #11">
+  <img src="BIOS_Settings/IMG_3028.jpg" width="100%" align=center alt="BIOS settings #12">
+  <img src="BIOS_Settings/IMG_3029.jpg" width="100%" align=center alt="BIOS settings #13">
+  <img src="BIOS_Settings/IMG_3030.jpg" width="100%" align=center alt="BIOS settings #14">
+  <img src="BIOS_Settings/IMG_3033.jpg" width="100%" align=center alt="BIOS settings #15">
+</p>
 
 # Credits:
 
