@@ -8,14 +8,6 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>All Z590 USB Ports enabled</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Path</key>
-				<string>SSDT-UIAC-Z590-All.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Improves SMBus Support</string>
 				<key>Enabled</key>
 				<true/>
@@ -52,23 +44,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-EC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Required for proper Thunderbolt</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Path</key>
-				<string>SSDT-DTPG.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Thunderbolt 4 Configuration for the Gigabyte Z590i Vision D</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Path</key>
-				<string>SSDT-TB3HP-JHL8540-GIGABYTE-Z590i-VISION-D.aml</string>
+				<string>SSDT-EC-USBX.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -156,7 +132,7 @@
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,2,0</string>
 				<key>device-id</key>
-				<data>ikwAAA==</data>
+				<data>xZsAAA==</data>
 				<key>device_type</key>
 				<string>VGA compatible controller</string>
 				<key>model</key>
@@ -165,9 +141,24 @@
 			<key>#PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>AACbPg==</data>
+				<data>AwDEmw==</data>
 				<key>device-id</key>
-				<data>kj4AAA==</data>
+				<data>xJsAAA==</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,2,0</string>
+				<key>device_type</key>
+				<string>VGA compatible controller</string>
+				<key>model</key>
+				<string>Intel UHD Graphics 630</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>name</key>
+				<data>I2Rpc3BsYXk=</data>
+				<key>IOName</key>
+				<string>#display</string>
+				<key>class-code</key>
+				<data>/////w==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
 			<dict>
@@ -185,7 +176,7 @@
 				<key>device_type</key>
 				<string>Ethernet Controller</string>
 				<key>model</key>
-				<string>Intel(R) Ethernet Controller i225-V</string>
+				<string>Intel(R) Ethernet Controller i225-LM</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -289,25 +280,7 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>USBInjectAll.kext</string>
-				<key>Comment</key>
-				<string>USB-port configuration for the Gigabyte Z590i Vision D</string>
-				<key>Enabled</key>
-				<false/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/USBInjectAll</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>USBMap_Z590i_VisionD.kext</string>
+				<string>USBMap_Z590i_VisionD_iMacPro1,1.kext</string>
 				<key>Comment</key>
 				<string>USB-port configuration for the Gigabyte Z590i Vision D</string>
 				<key>Enabled</key>
@@ -401,7 +374,7 @@
 			<key>Cpuid1Mask</key>
 			<data>/////wAAAAAAAAAAAAAAAA==</data>
 			<key>Cpuid1Data</key>
-			<data>6wYIAAAAAAAAAAAAAAAAAA==</data>
+			<data>6wYJAAAAAAAAAAAAAAAAAA==</data>
 			<key>##Cpuid1Data</key>
 			<data></data>
 			<key>##Cpuid1Mask</key>
@@ -423,15 +396,15 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>Enable dim keys by Wern</string>
+				<string>CalDigit Connect 10G/Aquantia AQC-107 Patch</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>MHgwMDA3MDAzYiwweGZmMDEwMDIw</data>
+				<data>YnVpbHQtaW4=</data>
 				<key>Identifier</key>
-				<string>com.apple.driver.AppleHIDKeyboard</string>
+				<string>com.apple.driver.AppleEthernetAquantiaAqtion</string>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
@@ -441,7 +414,7 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>Replace</key>
-				<data>MHgwMDA3MDAzYiwweDAwMDcwMDNi</data>
+				<data>YmJiYmJiYmI=</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -511,9 +484,9 @@
 		<key>Quirks</key>
 		<dict>
 			<key>AppleCpuPmCfgLock</key>
-			<true/>
+			<false/>
 			<key>AppleXcpmCfgLock</key>
-			<true/>
+			<false/>
 			<key>AppleXcpmExtraMsrs</key>
 			<false/>
 			<key>AppleXcpmForceBoost</key>
