@@ -12,6 +12,14 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
+				<string>SSDT-DTPG.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Thunderbolt 4 Support</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
 				<string>SSDT-TB3HP-JHL8540-GIGABYTE-Z590i-VISION-D.aml</string>
 			</dict>
 			<dict>
@@ -40,22 +48,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Enables native CPU power management</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-PLUG.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>RHUB-Reset</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-USB-Reset.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Defines Dummy EC (embedded controller)</string>
 				<key>Enabled</key>
 				<true/>
@@ -64,11 +56,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Works with USBWakeFixup.kext to fix the issue, that it takes two keypresses to wake up the display.</string>
+				<string>USB Reset</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-USBW.aml</string>
+				<string>SSDT-USB-Reset.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -86,6 +78,8 @@
 			<key>ResetHwSig</key>
 			<false/>
 			<key>ResetLogoStatus</key>
+			<false/>
+			<key>SyncTableIds</key>
 			<false/>
 		</dict>
 	</dict>
@@ -171,15 +165,6 @@
 				<string>VGA compatible controller</string>
 				<key>model</key>
 				<string>Intel UHD Graphics 630</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>name</key>
-				<data>I2Rpc3BsYXk=</data>
-				<key>IOName</key>
-				<string>#display</string>
-				<key>class-code</key>
-				<data>/////w==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1B,0x2)/Pci(0x0,0x0)</key>
 			<dict>
@@ -304,24 +289,6 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>USBWakeFixup.kext</string>
-				<key>Comment</key>
-				<string>Works with SSDT-USBW.aml to fix the issue, that it takes two keypresses to wake up the display.</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/USBWakeFixup</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
 		</array>
 		<key>Block</key>
 		<array/>
@@ -391,6 +358,8 @@
 		</dict>
 		<key>Scheme</key>
 		<dict>
+			<key>CustomKernel</key>
+			<false/>
 			<key>FuzzyMatch</key>
 			<false/>
 			<key>KernelArch</key>
@@ -482,7 +451,7 @@
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>SecureBootModel</key>
-			<string>Default</string>
+			<string>Disabled</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -510,7 +479,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>agdpmod=pikera -lilubeta keepsyms=1</string>
+				<string>agdpmod=pikera shikigva=80 -lilubetaall keepsyms=1</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
 				<key>prev-lang:kbd</key>
