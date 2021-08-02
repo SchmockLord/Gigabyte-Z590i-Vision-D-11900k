@@ -39,7 +39,7 @@ Within this repository I share my Hackintosh EFI for my newest build based on In
 # USB Port Mapping
 
 <p align="center">
-  <img src="Docs/USB-port-configuration-Z590i-VisionD#2.png" width="100%" align=center alt="USB Port Mapping Z590i Vision D">
+  <img src="Docs/USB-port-configuration-Z590i-VisionD%232.png" width="100%" align=center alt="USB Port Mapping Z590i Vision D">
 </p>
 
 
