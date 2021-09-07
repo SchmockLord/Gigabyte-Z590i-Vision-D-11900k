@@ -536,7 +536,7 @@
 				<key>boot-args</key>
 				<string>agdpmod=pikera shikigva=80 -lilubetaall keepsyms=1</string>
 				<key>csr-active-config</key>
-				<data>5wMAAA==</data>
+				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
 				<string>en-US:0</string>
 				<key>run-efi-updater</key>
@@ -558,6 +558,7 @@
 			</array>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<array>
+				<string>csr-active-config</string>
 				<string>boot-args</string>
 			</array>
 		</dict>
@@ -609,7 +610,7 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string></string>
+			<string>C02814600GUJG361H</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
@@ -621,9 +622,9 @@
 			<key>SystemProductName</key>
 			<string>iMacPro1,1</string>
 			<key>SystemSerialNumber</key>
-			<string></string>
+			<string>C02WJCYPHX87</string>
 			<key>SystemUUID</key>
-			<string></string>
+			<string>683F2A7D-98E1-4949-85D7-F4B092B4226B</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -695,10 +696,38 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
-			<string>OpenCanopy.efi</string>
-			<string>#AudioDxe.efi</string>
-			<string>OpenRuntime.efi</string>
-			<string>OpenHfsPlus.efi</string>
+			<dict>
+				<key>Path</key>
+				<string>OpenRuntime.efi</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Arguments</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Path</key>
+				<string>OpenHfsPlus.efi</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Arguments</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Path</key>
+				<string>OpenCanopy.efi</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Arguments</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Path</key>
+				<string>AudioDxe.efi</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Arguments</key>
+				<string></string>
+			</dict>
 		</array>
 		<key>Input</key>
 		<dict>
@@ -797,6 +826,8 @@
 			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
+			<key>ForceOcWriteFlash</key>
+			<false/>
 			<key>ForgeUefiSupport</key>
 			<false/>
 			<key>IgnoreInvalidFlexRatio</key>
