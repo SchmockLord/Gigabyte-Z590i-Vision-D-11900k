@@ -12,7 +12,7 @@ Within this repository I share my Hackintosh EFI for my newest build based on In
 - CPU: Intel i9-11900k
 - Board: Gigabyte Z590i Vision D:
    Audio: Realtek ALC4080
-   1x 2.5Gbit Ethernet: Realtek RTL8125B-CG (requires LucyRTL8125Ethernet.kext)
+   1x 2.5GBase-T (Intel I225-V)
    1x USB-C
    2x Thunderbolt 4 ports (Intel JHL8540 Maple Ridge)
    2x m.2 Slots
