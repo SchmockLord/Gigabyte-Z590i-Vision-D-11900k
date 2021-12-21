@@ -8,23 +8,7 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Thunderbolt 4 Support</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-TB3HP.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>USB Wakeup Fix</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-USBW.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>CPU Power Management</string>
+				<string>CPU PowerManagement</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -32,9 +16,17 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Thunderbolt 4 Support</string>
+				<string>Thunderbolt 4 Support - Disabled because Hotplug currently not working </string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
+				<key>Path</key>
+				<string>SSDT-TB3HP.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Thunderbolt 4 Support - Disabled because Hotplug currently not working </string>
+				<key>Enabled</key>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-DTPG.aml</string>
 			</dict>
@@ -116,7 +108,7 @@
 			<key>RebuildAppleMemoryMap</key>
 			<true/>
 			<key>ResizeAppleGpuBars</key>
-			<integer>10</integer>
+			<integer>0</integer>
 			<key>SetupVirtualMap</key>
 			<false/>
 			<key>SignalAppleOS</key>
@@ -164,7 +156,7 @@
 				<key>BundlePath</key>
 				<string>Lilu.kext</string>
 				<key>Comment</key>
-				<string>Plugin Manager, required to run Plugins like Whatevergreen etc.</string>
+				<string>V1.5.9 | Plugin Manager, required to run Plugins like Whatevergreen etc.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -182,7 +174,7 @@
 				<key>BundlePath</key>
 				<string>VirtualSMC.kext</string>
 				<key>Comment</key>
-				<string>Emulates the SMC chip found on real macs</string>
+				<string>V1.2.9 | Emulates the SMC chip found on real macs</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -200,9 +192,9 @@
 				<key>BundlePath</key>
 				<string>WhateverGreen.kext</string>
 				<key>Comment</key>
-				<string>Video patches for internal and extern GPUs</string>
+				<string>V1.5.6</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/WhateverGreen</string>
 				<key>MaxKernel</key>
@@ -218,7 +210,7 @@
 				<key>BundlePath</key>
 				<string>USBMap_iMacPro.kext</string>
 				<key>Comment</key>
-				<string>Injects USB Port config for the Z590i-VisionD with SMBIOS iMacPro1,1</string>
+				<string>V1.0 | Injects USB Port config for the Z590i-VisionD with SMBIOS iMacPro1,1</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -236,7 +228,7 @@
 				<key>BundlePath</key>
 				<string>SMCProcessor.kext</string>
 				<key>Comment</key>
-				<string>VirtualSMC plugin for monitoring the CPU temperature.</string>
+				<string>V1.2.9</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -254,29 +246,11 @@
 				<key>BundlePath</key>
 				<string>SMCSuperIO.kext</string>
 				<key>Comment</key>
-				<string>VirtualSMC plugin for monitoring the FAN speeds.</string>
+				<string>V1.2.9</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/SMCSuperIO</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>USBWakeFixup.kext</string>
-				<key>Comment</key>
-				<string>USBWakeFixup</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/USBWakeFixup</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -289,14 +263,10 @@
 		<array/>
 		<key>Emulate</key>
 		<dict>
-			<key>Cpuid1Mask</key>
-			<data>/////wAAAAAAAAAAAAAAAA==</data>
 			<key>Cpuid1Data</key>
 			<data>6wYJAAAAAAAAAAAAAAAAAA==</data>
-			<key>##Cpuid1Data</key>
-			<data></data>
-			<key>##Cpuid1Mask</key>
-			<data></data>
+			<key>Cpuid1Mask</key>
+			<data>/////wAAAAAAAAAAAAAAAA==</data>
 			<key>DummyPowerManagement</key>
 			<false/>
 			<key>MaxKernel</key>
@@ -325,7 +295,7 @@
 			<key>DisableLinkeditJettison</key>
 			<true/>
 			<key>DisableRtcChecksum</key>
-			<true/>
+			<false/>
 			<key>ExtendBTFeatureFlags</key>
 			<false/>
 			<key>ExternalDiskIcons</key>
@@ -446,7 +416,7 @@
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>SecureBootModel</key>
-			<string>Disabled</string>
+			<string>j137</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -461,8 +431,6 @@
 			<dict>
 				<key>DefaultBackgroundColor</key>
 				<data>AAAAAA==</data>
-				<key>UIScale</key>
-				<data>AQ==</data>
 			</dict>
 			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
 			<dict>
@@ -471,18 +439,18 @@
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
+				<key>ForceDisplayRotationInEFI</key>
+				<integer>0</integer>
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>agdpmod=pikera shikigva=80 -lilubetaall keepsyms=1 </string>
+				<string>agdpmod=pikera shikigva=80 -lilubetaall keepsyms=1</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
 				<string>en-US:0</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
-				<key>ForceDisplayRotationInEFI</key>
-				<integer>0</integer>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -502,6 +470,10 @@
 				<string>boot-args</string>
 			</array>
 		</dict>
+		<key>LegacyEnable</key>
+		<false/>
+		<key>LegacyOverwrite</key>
+		<false/>
 		<key>LegacySchema</key>
 		<dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
@@ -530,10 +502,6 @@
 				<string>BootOrder</string>
 			</array>
 		</dict>
-		<key>LegacyEnable</key>
-		<false/>
-		<key>LegacyOverwrite</key>
-		<false/>
 		<key>WriteFlash</key>
 		<true/>
 	</dict>
@@ -590,9 +558,9 @@
 			<key>JumpstartHotPlug</key>
 			<false/>
 			<key>MinDate</key>
-			<integer>0</integer>
+			<integer>-1</integer>
 			<key>MinVersion</key>
-			<integer>0</integer>
+			<integer>-1</integer>
 		</dict>
 		<key>AppleInput</key>
 		<dict>
@@ -637,44 +605,34 @@
 		<key>Drivers</key>
 		<array>
 			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
 				<key>Path</key>
 				<string>OpenRuntime.efi</string>
-				<key>Enabled</key>
-				<true/>
+			</dict>
+			<dict>
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
 				<string></string>
-			</dict>
-			<dict>
+				<key>Enabled</key>
+				<true/>
 				<key>Path</key>
 				<string>OpenHfsPlus.efi</string>
-				<key>Enabled</key>
-				<true/>
+			</dict>
+			<dict>
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
 				<string></string>
-			</dict>
-			<dict>
+				<key>Enabled</key>
+				<true/>
 				<key>Path</key>
 				<string>OpenCanopy.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>Path</key>
-				<string>AudioDxe.efi</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string></string>
 			</dict>
 		</array>
 		<key>Input</key>
@@ -712,6 +670,8 @@
 			<false/>
 			<key>ProvideConsoleGop</key>
 			<true/>
+			<key>ReconnectGraphicsOnConnect</key>
+			<false/>
 			<key>ReconnectOnResChange</key>
 			<false/>
 			<key>ReplaceTabWithSpace</key>
@@ -724,6 +684,8 @@
 			<string>BuiltinGraphics</string>
 			<key>UgaPassThrough</key>
 			<false/>
+			<key>UIScale</key>
+			<integer>1</integer>
 		</dict>
 		<key>ProtocolOverrides</key>
 		<dict>
@@ -771,6 +733,8 @@
 			<key>DisableSecurityPolicy</key>
 			<false/>
 			<key>EnableVectorAcceleration</key>
+			<false/>
+			<key>EnableVmx</key>
 			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
