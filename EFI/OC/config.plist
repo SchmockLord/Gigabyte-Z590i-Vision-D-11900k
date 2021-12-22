@@ -16,7 +16,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Thunderbolt 4 Support - Disabled because Hotplug currently not working </string>
+				<string>Thunderbolt 4 Support - Disabled because Hotplug currently not working</string>
 				<key>Enabled</key>
 				<false/>
 				<key>Path</key>
@@ -24,7 +24,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Thunderbolt 4 Support - Disabled because Hotplug currently not working </string>
+				<string>Thunderbolt 4 Support - Disabled because Hotplug currently not working</string>
 				<key>Enabled</key>
 				<false/>
 				<key>Path</key>
@@ -108,7 +108,7 @@
 			<key>RebuildAppleMemoryMap</key>
 			<true/>
 			<key>ResizeAppleGpuBars</key>
-			<integer>0</integer>
+			<integer>-1</integer>
 			<key>SetupVirtualMap</key>
 			<false/>
 			<key>SignalAppleOS</key>
@@ -121,26 +121,23 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
-			<dict>
-				<key>acpi-wake-type</key>
-				<data>AQ==</data>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x17,0x0)</key>
-			<dict>
-				<key>device_type</key>
-				<string>SATA controller</string>
-				<key>model</key>
-				<string>SATA 6Gb/s connectors</string>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x1B,0x2)/Pci(0x0,0x0)</key>
 			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,27,2/0,0</string>
 				<key>device-id</key>
 				<data>8xWGgA==</data>
 				<key>device_type</key>
 				<string>Ethernet controller</string>
 				<key>model</key>
 				<string>Intel I225-V</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1B,0x3)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Network controller</string>
+				<key>model</key>
+				<string>BCM4360 802.11ac Wireless Network Adapter</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -194,7 +191,7 @@
 				<key>Comment</key>
 				<string>V1.5.6</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/WhateverGreen</string>
 				<key>MaxKernel</key>
