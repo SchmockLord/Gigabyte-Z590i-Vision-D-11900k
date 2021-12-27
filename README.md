@@ -34,7 +34,7 @@ Within this repository I share my Hackintosh EFI for my newest build based on In
 
 # What is not working:
 - Thunderbolt 4 hot plugging
-- iGPU, just haven't tried that, will do that next week.
+- iGPU, the 11th Gen iGPU is not supported by macOS
 
 # USB Port Mapping
 
@@ -44,35 +44,28 @@ Within this repository I share my Hackintosh EFI for my newest build based on In
 
 
 # BIOS-settings:
-- Current BIOS version: F5a
-- Only setting you need to change, is setting '''Legacy USB''' to disabled and '''Internal graphics''' to disabled.
+- Current BIOS version: F7
+- Load optimized defaults
+- Set Above 4G Decoding to Enabled
+- Set Legacy USB Support to Disabled
+- Set Internal Graphics to Disabled (or Auto if you want to use it in Windows)
+- For Secure Boot:
+    -- Set Secure Boot to Enabled
+    -- Set Secure Boot Mode to Custom
+    -- Go to Key Management and then Enroll EFI. Add all .efi Files in your EFI Folder: BOOTX64.efi, all drivers, OpenCore.EFI
 
-Here are my settings with a dynamic OC on the 11900k. 
-
-Power Limit is set to 250W to stay within the limits of my Kraken X53 240mm AiO. In Cinebench R23 I get a maximum of 91C. Which is ok.
-
-54 when running on 2 cores.
-
-52 when running on 4 cores.
-
-51 when running with more than 4 cores.
+FYI: I have XMP Profile disabled because I noticed stability issues in macOS. I am using the RAM with 2133Mhz now.
 
 <p align="center">
-  <img src="BIOS_Settings/IMG_3016.jpg" width="100%" align=center alt="BIOS settings #1">
-  <img src="BIOS_Settings/IMG_3017.jpg" width="100%" align=center alt="BIOS settings #2">
-  <img src="BIOS_Settings/IMG_3018.jpg" width="100%" align=center alt="BIOS settings #3">
-  <img src="BIOS_Settings/IMG_3019.jpg" width="100%" align=center alt="BIOS settings #4">
-  <img src="BIOS_Settings/IMG_3020.jpg" width="100%" align=center alt="BIOS settings #5">
-  <img src="BIOS_Settings/IMG_3021.jpg" width="100%" align=center alt="BIOS settings #6">
-  <img src="BIOS_Settings/IMG_3022.jpg" width="100%" align=center alt="BIOS settings #7">
-  <img src="BIOS_Settings/IMG_3024.jpg" width="100%" align=center alt="BIOS settings #8">
-  <img src="BIOS_Settings/IMG_3025.jpg" width="100%" align=center alt="BIOS settings #9">
-  <img src="BIOS_Settings/IMG_3026.jpg" width="100%" align=center alt="BIOS settings #10">
-  <img src="BIOS_Settings/IMG_3027.jpg" width="100%" align=center alt="BIOS settings #11">
-  <img src="BIOS_Settings/IMG_3028.jpg" width="100%" align=center alt="BIOS settings #12">
-  <img src="BIOS_Settings/IMG_3029.jpg" width="100%" align=center alt="BIOS settings #13">
-  <img src="BIOS_Settings/IMG_3030.jpg" width="100%" align=center alt="BIOS settings #14">
-  <img src="BIOS_Settings/IMG_3033.jpg" width="100%" align=center alt="BIOS settings #15">
+  <img src="BIOS_Settings/IMG_1383.jpg" width="100%" align=center alt="BIOS settings #1">
+  <img src="BIOS_Settings/IMG_1384.jpg" width="100%" align=center alt="BIOS settings #2">
+  <img src="BIOS_Settings/IMG_1385.jpg" width="100%" align=center alt="BIOS settings #3">
+  <img src="BIOS_Settings/IMG_1386.jpg" width="100%" align=center alt="BIOS settings #4">
+  <img src="BIOS_Settings/IMG_1388.jpg" width="100%" align=center alt="BIOS settings #5">
+  <img src="BIOS_Settings/IMG_1389.jpg" width="100%" align=center alt="BIOS settings #6">
+  <img src="BIOS_Settings/IMG_1390.jpg" width="100%" align=center alt="BIOS settings #7">
+  <img src="BIOS_Settings/IMG_1405.jpg" width="100%" align=center alt="BIOS settings #8">
+  <img src="BIOS_Settings/IMG_1412.jpg" width="100%" align=center alt="BIOS settings #9">
 </p>
 
 # Credits:
