@@ -45,14 +45,15 @@ Within this repository I share my Hackintosh EFI for my newest build based on In
 
 # BIOS-settings:
 - Current BIOS version: F7
-- Load optimized defaults
-- Set Above 4G Decoding to Enabled
-- Set Legacy USB Support to Disabled
-- Set Internal Graphics to Disabled (or Auto if you want to use it in Windows)
-- For Secure Boot:
-    -- Set Secure Boot to Enabled
-    -- Set Secure Boot Mode to Custom
-    -- Go to Key Management and then Enroll EFI. Add all .efi Files in your EFI Folder: BOOTX64.efi, all drivers, OpenCore.EFI
+- **Load optimized defaults**
+- Set **Above 4G Decoding** to Enabled
+- Set **Legacy USB Support** to Disabled
+- Set **Internal Graphics** to Disabled (or Auto if you want to use it in Windows)
+- For **Secure Boot**:
+  - Set **Secure Boot** to Enabled
+  - Set **Secure Boot Mode** to Custom
+  - Go to **Key Management** and then **Enroll EFI**. 
+  - Add all *.efi Files in your EFI Folder: BOOTX64.efi, all drivers(OpenRunTime.efi, OpenHFSPlus.efi, OpenCanopy.efi), OpenCore.EFI
 
 FYI: I have XMP Profile disabled because I noticed stability issues in macOS. I am using the RAM with 2133Mhz now.
 
