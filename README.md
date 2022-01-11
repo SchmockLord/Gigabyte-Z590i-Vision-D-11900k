@@ -25,15 +25,14 @@ Within this repository I share my Hackintosh EFI for my newest build based on In
 - Case: NCASE M1 v6.1
 
 # What is working:
-- ~~CPU with iMac20,2 SMBIOS, currently using a Fake CPU-ID~~ Changed to SMBIOS iMacPro1,1 to enable full h264/h265 hardware encoding, until there is support for the iGPU, as the iMac-SMBIOS expect a iGPU to enable things like h264/h265.
-- eGPU is working out of the box with default BIOS settings
+- SMBIOS iMacPro1,1 with full h264/h265 hardware encoding
 - Audio: working out of the box as it is connected like a USB-Audio interface. But keep in mind it only shows up, when you plugin something (e.g. headphones).
-- Thunderbolt 4, but no hotplug
-- Wifi/BT, out of the box thanks to the BCM94360NG
+- Thunderbolt 4 with hotplug
+- Replacing the internal m.2 Intel Wifi with a BCM94360NG to have macOS native Wifi/BT Support
 - USB-ports. Have created my custom USB port mapping with USBMap.command
 
 # What is not working:
-- Thunderbolt 4 hot plugging
+- Sleep with Thunderbolt devices attached can be an issue.
 - iGPU, the 11th Gen iGPU is not supported by macOS
 
 # USB Port Mapping
@@ -48,6 +47,7 @@ Within this repository I share my Hackintosh EFI for my newest build based on In
 - **Load optimized defaults**
 - Set **Above 4G Decoding** to Enabled
 - Set **Legacy USB Support** to Disabled
+- Set **Intel VT-D** to Enabled (DisableIOMapper is disabled, AppleVTD should be working)
 - Set **Internal Graphics** to Disabled (or Auto if you want to use it in Windows)
 - For **Secure Boot**:
   - Set **Secure Boot** to Enabled
