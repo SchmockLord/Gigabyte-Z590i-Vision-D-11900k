@@ -17,7 +17,7 @@ Within this repository I share my Hackintosh EFI for my newest build based on In
   - 2x Thunderbolt 4 ports (Intel JHL8540 Maple Ridge)
   - 2x m.2 Slots
 - RAM: 32GB G.Skill Trident Z 3600Mhz CL18
-- eGPU: AMD Radeon Pro W5500 in a Razer Core X connected via Thunderbolt
+- AMD 6900XTXH (MSI Radeon RX 6900 XT Gaming Z)
 - Wifi/BT: Intel AX201, replaced by a Broadcom BCM94360NG for macOS Compatibilty. Works out of the box. The BCM94360NG fits into the original WiFi-card housing and sits under the IO-shield. Original antennas fit.
 - SSDs: 
     1x 2TB Samsung 980 Pro OEM (PM9A1) for Windows 10 (sits in the m.2 below the CPU)
