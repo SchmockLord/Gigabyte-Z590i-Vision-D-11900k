@@ -3,8 +3,7 @@
 Within this repository I share my Hackintosh EFI for my newest build based on Intels Rocketlake 11th Gen CPU.
 
 <p align="center">
-  <img src="Docs/ScreenShot_2021-04-01_at_15.00.38.png" width="100%" align=center alt="Z590i and 11900k running macOS Big Sur">
-  <img src="Docs/ScreenShot_2021-04-05_at_13.47.39.png" width="70%" align=center alt="Geekbench Score on Geekbench 5.4.0">
+  <img src="Docs/Screenshot 2022-08-02 at 15.59.27.png" width="100%" align=center alt="Z590i and 11900k running macOS Ventura">
 </p>
 
 # Hardware used in this build:
@@ -25,14 +24,14 @@ Within this repository I share my Hackintosh EFI for my newest build based on In
 - Case: NCASE M1 v6.1
 
 # What is working:
-- SMBIOS iMacPro1,1 with full h264/h265 hardware encoding
+- SMBIOS MacPro7,1 with full h264/h265 hardware encoding
 - Audio: working out of the box as it is connected like a USB-Audio interface. But keep in mind it only shows up, when you plugin something (e.g. headphones).
-- Thunderbolt 4 with hotplug
+- Thunderbolt 4 (except Hotplug)
 - Replacing the internal m.2 Intel Wifi with a BCM94360NG to have macOS native Wifi/BT Support
 - USB-ports. Have created my custom USB port mapping with USBMap.command
 
 # What is not working:
-- Sleep with Thunderbolt devices attached can be an issue.
+- Thunderbolt Hotplug
 - iGPU, the 11th Gen iGPU is not supported by macOS
 
 # USB Port Mapping
