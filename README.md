@@ -26,12 +26,11 @@ Within this repository I share my Hackintosh EFI for my newest build based on In
 # What is working:
 - SMBIOS MacPro7,1 with full h264/h265 hardware encoding
 - Audio: working out of the box as it is connected like a USB-Audio interface. But keep in mind it only shows up, when you plugin something (e.g. headphones).
-- Thunderbolt 4 (except Hotplug)
+- Thunderbolt 4 (incl. Hotplug, tested with Monterey 12.5 and Ventura Beta 5)
 - Replacing the internal m.2 Intel Wifi with a BCM94360NG to have macOS native Wifi/BT Support
 - USB-ports. Have created my custom USB port mapping with USBMap.command
 
 # What is not working:
-- Thunderbolt Hotplug
 - iGPU, the 11th Gen iGPU is not supported by macOS
 
 # USB Port Mapping
@@ -42,12 +41,28 @@ Within this repository I share my Hackintosh EFI for my newest build based on In
 
 
 # BIOS-settings:
-- Current BIOS version: F7
+- Current BIOS version: F8b
 - **Load optimized defaults**
 - Set **Above 4G Decoding** to Enabled
 - Set **Legacy USB Support** to Disabled
 - Set **Intel VT-D** to Enabled (DisableIOMapper is disabled, AppleVTD should be working)
 - Set **Internal Graphics** to Disabled (or Auto if you want to use it in Windows)
+- Thunderbolt:
+  - Discrete Thunderbolt Support: Enabled
+  - Wake From Thunderbolt Devices: Disabled
+  - Native OS security for TBT: Disabled
+
+  - Discrete Thunderbolt Configuration:
+   - Thunderbolt USB Support: Disabled
+   - Thunderbolt Boot Support: Disabled
+   - Titan Ridge Workaround for OSUP: Disabled
+   - Tbt Dynamic AC/DC L1: Disabled
+   - GPIO3 Force Pwr: Enabled
+   - Wait time in ms after applying Force Pwr: 200
+   - GPIO filter: Enabled
+
+   - DTBT Controller 0 Configuration: all Settings in this Submenu BIOS-Default
+   
 - For **Secure Boot**:
   - Set **Secure Boot** to Enabled
   - Set **Secure Boot Mode** to Custom
@@ -57,15 +72,14 @@ Within this repository I share my Hackintosh EFI for my newest build based on In
 FYI: I have XMP Profile disabled because I noticed stability issues in macOS. I am using the RAM with 2133Mhz now.
 
 <p align="center">
-  <img src="BIOS_Settings/IMG_1383.jpg" width="100%" align=center alt="BIOS settings #1">
-  <img src="BIOS_Settings/IMG_1384.jpg" width="100%" align=center alt="BIOS settings #2">
-  <img src="BIOS_Settings/IMG_1385.jpg" width="100%" align=center alt="BIOS settings #3">
-  <img src="BIOS_Settings/IMG_1386.jpg" width="100%" align=center alt="BIOS settings #4">
-  <img src="BIOS_Settings/IMG_1388.jpg" width="100%" align=center alt="BIOS settings #5">
-  <img src="BIOS_Settings/IMG_1389.jpg" width="100%" align=center alt="BIOS settings #6">
-  <img src="BIOS_Settings/IMG_1390.jpg" width="100%" align=center alt="BIOS settings #7">
-  <img src="BIOS_Settings/IMG_1405.jpg" width="100%" align=center alt="BIOS settings #8">
-  <img src="BIOS_Settings/IMG_1412.jpg" width="100%" align=center alt="BIOS settings #9">
+  <img src="BIOS_Settings/IMG_4756.jpg" width="100%" align=center alt="BIOS settings #1">
+  <img src="BIOS_Settings/IMG_4757.jpg" width="100%" align=center alt="BIOS settings #2">
+  <img src="BIOS_Settings/IMG_4758.jpg" width="100%" align=center alt="BIOS settings #3">
+  <img src="BIOS_Settings/IMG_4759.jpg" width="100%" align=center alt="BIOS settings #4">
+  <img src="BIOS_Settings/IMG_4760.jpg" width="100%" align=center alt="BIOS settings #5">
+  <img src="BIOS_Settings/IMG_4763.jpg" width="100%" align=center alt="BIOS settings #6">
+  <img src="BIOS_Settings/IMG_4761.jpg" width="100%" align=center alt="BIOS settings #7">
+  <img src="BIOS_Settings/IMG_4762.jpg" width="100%" align=center alt="BIOS settings #8">
 </p>
 
 # Credits:
