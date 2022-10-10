@@ -58,7 +58,7 @@
 				<key>Comment</key>
 				<string>Implements DTGP method that is needed by other SSDTs</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-DTPG.aml</string>
 			</dict>
@@ -66,7 +66,7 @@
 				<key>Comment</key>
 				<string>Thunderbolt Hot Plug Support</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-MAPLE-RIDGE-RP05-V2.aml</string>
 			</dict>
@@ -90,36 +90,6 @@
 		</array>
 		<key>Patch</key>
 		<array>
-			<dict>
-				<key>Base</key>
-				<string></string>
-				<key>BaseSkip</key>
-				<integer>0</integer>
-				<key>Comment</key>
-				<string>Change ADBG to XDBG</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>QwMUGUFEQkc=</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data>R1NXQXBw</data>
-				<key>Replace</key>
-				<data>QwMUGVhEQkc=</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>U1NEVA==</data>
-			</dict>
 			<dict>
 				<key>Base</key>
 				<string></string>
@@ -171,6 +141,36 @@
 				<data>SWdmeFNzZHQ=</data>
 				<key>Replace</key>
 				<data>TUNIQw==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>U1NEVA==</data>
+			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Comment</key>
+				<string>Change ADBG to XDBG</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>QwMUGUFEQkc=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>R1NXQXBw</data>
+				<key>Replace</key>
+				<data>QwMUGVhEQkc=</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -669,7 +669,7 @@
 			<key>AdviseFeatures</key>
 			<true/>
 			<key>MLB</key>
-			<string>Please fill</string>
+			<string>Please fill here</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
@@ -683,9 +683,9 @@
 			<key>SystemProductName</key>
 			<string>MacPro7,1</string>
 			<key>SystemSerialNumber</key>
-			<string>Please fill</string>
+			<string>Please fill here</string>
 			<key>SystemUUID</key>
-			<string>Please fill</string>
+			<string>Please fill here</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
