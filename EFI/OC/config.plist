@@ -32,7 +32,15 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>USB Ports Z590i Vision D</string>
+				<string>USB Ports config for the Z590 Vision D (ATX version)</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Path</key>
+				<string>SSDT-USB-Ports-Z590-VisionD.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB Ports config for the Z590i Vision D (mini-ITX Version)</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
