@@ -35,6 +35,9 @@ Within this repository I share my Hackintosh EFI for my newest build based on In
 
 # USB Port Mapping
 
+**Update (05.01.23): Z590 Vision D Users**
+I have added a USB port configuration for the ATX version Z590 Vision D as well. You just have to disable SSDT-USB-Ports-Z590i-VisionD.aml and enable SSDT-USB-Ports-Z590-VisionD.aml.
+
 <p align="center">
   <img src="Docs/USB-port-configuration-Z590i-VisionD%232.png" width="100%" align=center alt="USB Port Mapping Z590i Vision D">
 </p>
